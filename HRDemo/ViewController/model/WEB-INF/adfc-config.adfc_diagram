@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1">
+      <property
+         name="linkStyle">Orthogonal</property>
+   </OverallProperties>
+   <View
+      id="View2">
+      <property
+         name="activityId">emp_search</property>
+      <property
+         name="x">369.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>emp_search&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">90.896484</property>
+      <property
+         name="page">/emp_search.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="thumbnailExpanded">false</property>
+   </View>
+   <View
+      id="View3">
+      <property
+         name="activityId">emp_edit</property>
+      <property
+         name="x">634.5</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>emp_edit&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">149.79883</property>
+      <property
+         name="page">/emp_edit.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="View2"
+      to="View3">
+      <property
+         name="fromOutcome">edit</property>
+      <property
+         name="sdm:polyPoints">R46,508.75,87.0459,508.75,145.94824,L46</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase5"
+      from="View3"
+      to="View2">
+      <property
+         name="fromOutcome">list</property>
+      <property
+         name="sdm:polyPoints">L54,501.75,152.94824,501.75,94.0459,R54</property>
+   </ControlFlowCase>
+</SDM>
