@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EmpDeptFkLink"
+  Version="12.2.1.20.47"
+  InheritPersonalization="merge"
+  EntityAssociation="hrdemo.model.entity.assoc.EmpDeptFkAssoc">
+  <ViewLinkDefEnd
+    Name="Departments1_1"
+    Cardinality="1"
+    Source="true"
+    Owner="hrdemo.model.view.DepartmentsVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="Departments1"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="hrdemo.model.view.DepartmentsVO.DepartmentId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="Employees"
+    Cardinality="-1"
+    Owner="hrdemo.model.view.EmployeesVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="Employees"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="hrdemo.model.view.EmployeesVO.DepartmentId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

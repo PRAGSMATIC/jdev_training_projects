@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="emp_search">
+    <page>/emp_search.jsf</page>
+  </view>
+  <view id="emp_edit">
+    <page>/emp_edit.jsf</page>
+  </view>
+  <control-flow-rule id="__1">
+    <from-activity-id>emp_search</from-activity-id>
+    <control-flow-case id="__2">
+      <from-outcome>edit</from-outcome>
+      <to-activity-id>emp_edit</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__3">
+    <from-activity-id>emp_edit</from-activity-id>
+    <control-flow-case id="__4">
+      <from-outcome>list</from-outcome>
+      <to-activity-id>emp_search</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+</adfc-config>

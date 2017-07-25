@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composite xmlns="http://xmlns.oracle.com/sca/1.0" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:ns6="http://xmlns.oracle.com/sca/1.0-ext" xmlns:ns7="http://schemas.oracle.com/events/edl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:orawsp="http://schemas.oracle.com/ws/2006/01/policy" xmlns:ui="http://xmlns.oracle.com/soa/designer/" name="LoanApplication" revision="1.0" label="2016-12-13_07-04-22_602" mode="active" state="on">
+   <component name="LoanProcess">
+      <implementation.bpmn src="processes/LoanProcess.bpmn"/>
+      <componentType/>
+   </component>
+</composite>

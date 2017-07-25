@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.20.47" id="emp_searchPageDef"
+                Package="hrdemo.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="Employees1" RangeSize="25" DataControl="HR_AMDataControl" id="Employees1Iterator"/>
+    <searchRegion Criteria="FindEmployeeByName" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="Employees1Iterator" id="FindEmployeeByNameQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="Employees1Iterator" id="Employees1">
+      <nodeDefinition DefName="hrdemo.model.view.EmployeesVO" Name="Employees10">
+        <AttrNames>
+          <Item Value="EmployeeId"/>
+          <Item Value="FirstName"/>
+          <Item Value="LastName"/>
+          <Item Value="Email"/>
+          <Item Value="PhoneNumber"/>
+          <Item Value="HireDate"/>
+          <Item Value="JobId"/>
+          <Item Value="Salary"/>
+          <Item Value="CommissionPct"/>
+          <Item Value="ManagerId"/>
+          <Item Value="DepartmentId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>
